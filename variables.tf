@@ -88,3 +88,13 @@ variable "database_route_tags" {
   default = {}
   
 }
+
+variable "is_Peering" {
+  type = bool
+  default = false
+}
+
+variable "acceptor_vpc_id" {
+  type = string
+  default = ""
+}

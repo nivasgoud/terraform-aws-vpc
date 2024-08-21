@@ -17,3 +17,15 @@ output "private_subnet_id" {
 output "database_subnet_id" {
   value = aws_subnet.database_subnet_module[*].id
 }
+
+output "default_id" {
+  value = data.aws_vpc.default.id
+}
+
+output "default_cidrblock" {
+  value = data.aws_vpc.default.cidr_block
+}
+
+output "default_routetable" {
+  value = data.aws_route_table.default.id
+}

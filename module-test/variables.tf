@@ -46,3 +46,8 @@ variable "database_subnet_cidr_test" {
  type = list
  default = ["10.0.5.0/24" , "10.0.6.0/24"]
 }
+
+variable "is_Peering" {
+  type = string
+  default = true
+}

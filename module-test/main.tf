@@ -6,4 +6,5 @@ module "vpc_infra" {
   public_subnet_cidr = var.public_subnet_cidr_test
   private_subnet_cidr = var.private_subnet_cidr_test
   database_subnet_cidr = var.database_subnet_cidr_test
+  is_Peering = var.is_Peering
 }

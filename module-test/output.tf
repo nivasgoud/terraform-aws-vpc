@@ -9,3 +9,11 @@ output "slicing_zones_test" {
 output "subnet_id_test" {
   value = module.vpc_infra.database_subnet_id
 }
+
+output "default_vpc_details" {
+  value = module.vpc_infra.default_id
+}
+
+output "default_routetable" {
+  value = module.vpc_infra.default_routetable
+}
