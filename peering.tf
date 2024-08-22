@@ -3,6 +3,13 @@ resource "aws_vpc_peering_connection" "peering_module" {
   vpc_id   = aws_vpc.vpc_module.id
   peer_vpc_id  = var.acceptor_vpc_id == "" ? data.aws_vpc.default.id  : var.acceptor_vpc_id
   auto_accept   = var.is_Peering && var.acceptor_vpc_id == "" ? true : false
+  tags = merge(
+    var.common_tags,
+    var.vpc_peering_tags,
+    {
+    Name = "${local.name}"
+    }
+  )
 }
 
 resource "aws_route" "public_route_roboshopvpc" {

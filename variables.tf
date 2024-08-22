@@ -98,3 +98,8 @@ variable "acceptor_vpc_id" {
   type = string
   default = ""
 }
+
+variable "vpc_peering_tags" {
+  type = map
+  default = {}
+}
