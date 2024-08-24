@@ -29,3 +29,7 @@ output "default_cidrblock" {
 output "default_routetable" {
   value = data.aws_route_table.default.id
 }
+
+output "roboshop_vpc_id" {
+  value = aws_vpc.vpc_module.id
+}

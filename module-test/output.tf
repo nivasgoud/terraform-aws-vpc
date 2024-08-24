@@ -17,3 +17,7 @@ output "default_vpc_details" {
 output "default_routetable" {
   value = module.vpc_infra.default_routetable
 }
+
+output "robo_id" {
+  value = module.vpc_infra.roboshop_vpc_id
+}
