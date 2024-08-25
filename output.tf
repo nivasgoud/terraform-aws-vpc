@@ -30,6 +30,6 @@ output "default_routetable" {
   value = data.aws_route_table.default.id
 }
 
-output "roboshop_vpc_id" {
-  value = aws_vpc.vpc_module.id
+output "roboshop_vpc_cidrblock" {
+  value = aws_vpc.vpc_module.cidr_block
 }
